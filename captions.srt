@@ -1,0 +1,138 @@
+1
+00:00:00,000 --> 00:00:04,198
+A bike-demand forecast is easy to turn into a confident
+number.
+
+2
+00:00:04,198 --> 00:00:09,159
+CycleProof asks a better question: what should a planner do
+when that number
+
+3
+00:00:09,159 --> 00:00:09,922
+is wrong?
+
+4
+00:00:09,922 --> 00:00:14,120
+This is a historical planning lab, not a live bike-
+availability service.
+
+5
+00:00:14,120 --> 00:00:19,922
+Pick a day and compare yesterday, last week, boosted trees,
+and a neural
+
+6
+00:00:19,922 --> 00:00:20,368
+network.
+
+7
+00:00:20,368 --> 00:00:22,600
+The shaded band shows uncertainty.
+
+8
+00:00:22,600 --> 00:00:28,402
+Change the hypothetical hourly workload limit, and the app
+flags hours worth reviewing.
+
+9
+00:00:28,402 --> 00:00:31,080
+Rental events are not fleet size.
+
+10
+00:00:31,080 --> 00:00:33,342
+These models were actually trained.
+
+11
+00:00:33,342 --> 00:00:39,225
+On two thousand one hundred and one held-out hours, boosted
+trees have a
+
+12
+00:00:39,225 --> 00:00:43,750
+mean absolute error of fifty-eight point four rentals per
+hour.
+
+13
+00:00:43,750 --> 00:00:46,465
+Last week gets sixty-nine point five.
+
+14
+00:00:46,465 --> 00:00:49,632
+The neural network gets seventy-nine point seven.
+
+15
+00:00:49,632 --> 00:00:52,800
+Deep learning does not win this test.
+
+16
+00:00:52,800 --> 00:00:54,753
+Time stays in order.
+
+17
+00:00:54,753 --> 00:01:01,099
+Training ends in June, validation uses July and August,
+calibration uses September, and
+
+18
+00:01:01,099 --> 00:01:04,517
+the final test is October through December.
+
+19
+00:01:04,517 --> 00:01:08,911
+Features use calendar and exact one-day and one-week lags.
+
+20
+00:01:08,911 --> 00:01:11,840
+No target-day weather or component-count leakage.
+
+21
+00:01:11,840 --> 00:01:14,574
+Import a historical scenario as CSV.
+
+22
+00:01:14,574 --> 00:01:20,497
+The app rejects wrong columns, impossible dates, duplicate
+hours, and missing or invalid
+
+23
+00:01:20,497 --> 00:01:20,952
+counts.
+
+24
+00:01:20,952 --> 00:01:24,141
+It predicts locally using exported model weights.
+
+25
+00:01:24,141 --> 00:01:30,064
+Save a plan in your browser, or export the hourly review as a
+
+26
+00:01:30,064 --> 00:01:30,520
+CSV.
+
+27
+00:01:30,520 --> 00:01:31,822
+The limits matter.
+
+28
+00:01:31,822 --> 00:01:37,031
+Missing timestamps exclude some hours, so this is not an all-
+hours evaluation.
+
+29
+00:01:37,031 --> 00:01:40,069
+There is only one eligible storm-period row.
+
+30
+00:01:40,069 --> 00:01:45,711
+The data is one city from twenty eleven and twenty twelve, and
+uncertainty
+
+31
+00:01:45,711 --> 00:01:47,448
+is not a guarantee.
+
+32
+00:01:47,448 --> 00:01:50,920
+CycleProof makes those limits part of the decision.

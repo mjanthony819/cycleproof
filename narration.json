@@ -1,0 +1,18 @@
+{
+  "segments": [
+    "A bike-demand forecast is easy to turn into a confident number. CycleProof asks a better question: what should a planner do when that number is wrong? This is a historical planning lab, not a live bike-availability service.",
+    "Pick a day and compare yesterday, last week, boosted trees, and a neural network. The shaded band shows uncertainty. Change the hypothetical hourly workload limit, and the app flags hours worth reviewing. Rental events are not fleet size.",
+    "These models were actually trained. On two thousand one hundred and one held-out hours, boosted trees have a mean absolute error of fifty-eight point four rentals per hour. Last week gets sixty-nine point five. The neural network gets seventy-nine point seven. Deep learning does not win this test.",
+    "Time stays in order. Training ends in June, validation uses July and August, calibration uses September, and the final test is October through December. Features use calendar and exact one-day and one-week lags. No target-day weather or component-count leakage.",
+    "Import a historical scenario as CSV. The app rejects wrong columns, impossible dates, duplicate hours, and missing or invalid counts. It predicts locally using exported model weights. Save a plan in your browser, or export the hourly review as a CSV.",
+    "The limits matter. Missing timestamps exclude some hours, so this is not an all-hours evaluation. There is only one eligible storm-period row. The data is one city from twenty eleven and twenty twelve, and uncertainty is not a guarantee. CycleProof makes those limits part of the decision."
+  ],
+  "durations": [
+    14.12,
+    16.96,
+    21.72,
+    19.04,
+    18.68,
+    20.4
+  ]
+}

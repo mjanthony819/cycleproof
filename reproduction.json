@@ -1,0 +1,11 @@
+{
+  "independent_clean_directory": true,
+  "downloaded_source_again": true,
+  "exact_sha256_matches": {
+    "hour.csv": true,
+    "model.json": true,
+    "results.json": true,
+    "test_records.json": true,
+    "parity.json": true
+  }
+}
