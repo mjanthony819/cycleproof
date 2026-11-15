@@ -1,2 +1,0 @@
-target_hour,model,prediction,lower90,upper90,actual,workload_limit,review
-2012-10-01T08:00,Neural 48-24,392.064,117.855,666.272,,400,upper_exceeds
